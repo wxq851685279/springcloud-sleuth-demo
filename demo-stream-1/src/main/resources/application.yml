@@ -1,0 +1,21 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: demo-stream-1
+  sleuth:
+    sampler:
+      percentage: 0.8
+  zipkin:
+    enabled: true
+    base-url: http://127.0.0.1:9411
+  kafka:
+    bootstrap-servers:
+    - localhost:9092
+  cloud:
+    stream:
+      bindings:
+        message-output:
+          destination: message
+          contentType: application/json
+          group: demo-stream-1

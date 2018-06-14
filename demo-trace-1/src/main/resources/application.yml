@@ -1,5 +1,5 @@
 server:
-  port: 2001
+  port: 3000
 
 spring:
   application:
@@ -13,5 +13,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
       defaultZone: http://localhost:2000/eureka/

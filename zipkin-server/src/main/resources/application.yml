@@ -1,6 +1,23 @@
 server:
   port: 9411
-
 spring:
   application:
     name: zipkin-server
+  zipkin:
+    enabled: false
+  datasource:
+    schema: classpath:/mysql.sql
+    url: jdbc:mysql://127.0.0.1:3306/zipkin?zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2b8
+    username: root
+    password: root
+    initialize: true
+    continueOnError: true
+  sleuth:
+    enabled: false
+      
+zipkin:
+  storage:
+    type: mysql
+  collector:
+    kafka:
+      zookeeper: localhost:2181

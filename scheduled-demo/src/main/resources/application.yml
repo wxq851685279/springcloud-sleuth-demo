@@ -1,0 +1,11 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: scheduled-demo
+  sleuth:
+    sampler:
+      percentage: 0.5
+  zipkin:
+    base-url: http://127.0.0.1:9411

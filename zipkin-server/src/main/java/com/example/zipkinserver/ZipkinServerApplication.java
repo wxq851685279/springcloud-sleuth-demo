@@ -2,10 +2,12 @@ package com.example.zipkinserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableZipkinServer
+//@EnableZipkinStreamServer
 public class ZipkinServerApplication {
 
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 server:
-  port: 2002
+  port: 4000
 
 spring:
   application:
@@ -9,9 +9,7 @@ spring:
       percentage: 0.5
   zipkin:
     base-url: http://127.0.0.1:9411
-
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
       defaultZone: http://localhost:2000/eureka/

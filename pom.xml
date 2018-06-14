@@ -35,9 +35,10 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>zipkin-server</module>
+        <!-- <module>zipkin-server</module> -->
         <module>demo-trace-1</module>
         <module>demo-trace-2</module>
+        <module>scheduled-demo</module>
     </modules>
 
 
